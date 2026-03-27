@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Achievements | Sanjay Mudumby</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⚡</text></svg>">
+</head>
+<body>
+  <canvas id="particle-canvas"></canvas>
+
+  <nav class="navbar">
+    <a href="index.html" class="nav-logo">SANJAY<span>.</span>MUDUMBY</a>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">Origin</a></li>
+      <li><a href="skills.html">Powers</a></li>
+      <li><a href="projects.html">Quests</a></li>
+      <li><a href="certifications.html">Achievements</a></li>
+      <li><a href="contact.html">Summon</a></li>
+    </ul>
+    <div class="nav-toggle"><span></span><span></span><span></span></div>
+  </nav>
+
+  <!-- CERT MODAL -->
+  <div class="modal-overlay" id="cert-modal">
+    <div class="modal-content" style="max-width:650px;width:90vw;">
+      <button class="modal-close" aria-label="Close">✕</button>
+      <div style="padding:2rem;">
+        <img class="modal-cert-img" src="" alt="Certificate" style="width:100%;border-radius:8px;display:none;margin-bottom:1.5rem;">
+        <div class="modal-cert-info">
+          <div style="font-family:var(--font-display);font-size:0.65rem;color:var(--neon-cyan);letter-spacing:3px;margin-bottom:0.75rem;">ACHIEVEMENT UNLOCKED</div>
+          <h3 style="font-family:var(--font-display);font-size:1.1rem;color:var(--neon-blue);letter-spacing:2px;margin-bottom:0.5rem;text-shadow:0 0 10px var(--neon-blue);"></h3>
+          <p class="cert-issuer-text" style="font-family:var(--font-heading);color:var(--text-secondary);font-size:0.9rem;margin-bottom:0.3rem;"></p>
+          <p class="cert-date-text" style="font-family:var(--font-display);font-size:0.7rem;color:var(--neon-cyan);letter-spacing:2px;margin-bottom:1.5rem;"></p>
+          <div style="display:flex;gap:1rem;flex-wrap:wrap;">
+            <a href="#" class="btn btn-primary modal-cert-link" target="_blank" rel="noopener" style="display:none;flex:1;">🔗 Verify Certificate</a>
+            <a href="#" class="btn btn-primary modal-cert-view" target="_blank" style="display:none;flex:1;">👁 View Certificate (PDF)</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="page-content">
+    <section class="section">
+      <div class="fade-in">
+        <div class="system-tag" style="font-family:var(--font-display);font-size:0.7rem;color:var(--neon-cyan);letter-spacing:4px;text-transform:uppercase;margin-bottom:0.5rem;">▶ Achievement Log — Unlocked Titles</div>
+        <h1 class="section-title">ACHIEVEMENTS</h1>
+        <div class="section-divider"></div>
+        <p class="section-subtitle">Certificates & Milestones Earned</p>
+      </div>
+
+      <!-- FEATURED CERTS -->
+      <div style="margin-bottom:1rem;">
+        <div style="font-family:var(--font-display);font-size:0.7rem;color:var(--gold);letter-spacing:3px;text-transform:uppercase;margin-bottom:1rem;">🏆 S-RANK ACHIEVEMENTS</div>
+      </div>
+
+      <div class="certs-grid fade-in">
+
+        <!-- C-DAC / CDAC -->
+        <div class="cert-card glass-card" style="border-color:rgba(255,215,0,0.3);"
+          data-cert-name="Cryptography in Blockchain"
+          data-cert-issuer="C-DAC Hyderabad, Ministry of Electronics & IT (ISEA Project)"
+          data-cert-date="February 13, 2026"
+          data-cert-img=""
+          data-cert-link="#"
+          data-cert-download="images/Certificates/Cryptography in Blockchain_484660_SanjayMudumby.pdf">
+          <div class="cert-issuer-logo" style="background:rgba(255,215,0,0.1);border:1px solid rgba(255,215,0,0.2);">🔐</div>
+          <div class="cert-name">Cryptography in Blockchain</div>
+          <div class="cert-issuer">C-DAC Hyderabad · ISEA Project · Govt. of India</div>
+          <div class="cert-date">FEB 2026</div>
+          <span class="rank-badge rank-s" style="margin-top:0.75rem;display:inline-block;">S-RANK</span>
+          <div class="cert-view-hint">↗ Click to view details</div>
+        </div>
+
+        <!-- AI-ML Internship -->
+        <div class="cert-card glass-card" style="border-color:rgba(255,215,0,0.3);"
+          data-cert-name="AI-ML Virtual Internship Certificate"
+          data-cert-issuer="AICTE + Google for Developers (EduSkills)"
+          data-cert-date="December 2024"
+          data-cert-img=""
+          data-cert-link="#"
+          data-cert-download="images\Certificates\MUDUMBY  Sanjay 539799.pdf">
+          <div class="cert-issuer-logo" style="background:rgba(255,215,0,0.1);border:1px solid rgba(255,215,0,0.2);">🤖</div>
+          <div class="cert-name">AI-ML Virtual Internship</div>
+          <div class="cert-issuer">AICTE + Google for Developers</div>
+          <div class="cert-date">DEC 2024</div>
+          <span class="rank-badge rank-s" style="margin-top:0.75rem;display:inline-block;">S-RANK</span>
+          <div class="cert-view-hint">↗ Click to view details</div>
+        </div>
+
+        <!-- Cognifyz Internship -->
+        <div class="cert-card glass-card" style="border-color:rgba(255,45,140,0.3);"
+          data-cert-name="Python Development Internship Completion"
+          data-cert-issuer="Cognifyz Technologies"
+          data-cert-date="September 20, 2025"
+          data-cert-img=""
+          data-cert-link="#"
+          data-cert-download="images/Certificates/Internship Completion.pdf">
+          <div class="cert-issuer-logo" style="background:rgba(255,45,140,0.1);border:1px solid rgba(255,45,140,0.2);">🐍</div>
+          <div class="cert-name">Python Development Internship</div>
+          <div class="cert-issuer">Cognifyz Technologies</div>
+          <div class="cert-date">SEP 2025</div>
+          <span class="rank-badge rank-a" style="margin-top:0.75rem;display:inline-block;">A-RANK</span>
+          <div class="cert-view-hint">↗ Click to view details</div>
+        </div>
+
+        <!-- IBM Data Viz -->
+        <div class="cert-card glass-card"
+          data-cert-name="Data Visualization with Python"
+          data-cert-issuer="IBM / Cognitive Class (DV0101EN)"
+          data-cert-date="March 10, 2025"
+          data-cert-img=""
+          data-cert-link="https://courses.cognitiveclass.ai/certificates/caa676407ee2460397773cf0f4e9a4e0"
+          data-cert-download="images/Certificates/IBM-DV0101EN-Certificate.pdf.pdf">
+          <div class="cert-issuer-logo" style="background:rgba(0,212,255,0.1);border:1px solid rgba(0,212,255,0.2);">📊</div>
+          <div class="cert-name">Data Visualization with Python</div>
+          <div class="cert-issuer">IBM / Cognitive Class · DV0101EN</div>
+          <div class="cert-date">MAR 2025</div>
+          <span class="rank-badge rank-b" style="margin-top:0.75rem;display:inline-block;">B-RANK</span>
+          <div class="cert-view-hint">↗ Click to view & verify</div>
+        </div>
+
+        <!-- Infosys Python for DS -->
+        <div class="cert-card glass-card"
+          data-cert-name="Python for Data Science"
+          data-cert-issuer="Infosys Springboard"
+          data-cert-date="March 2, 2025"
+          data-cert-img=""
+          data-cert-link="#"
+          data-cert-download="images\Certificates\1-d6989158-436d-405d-b56b-3f61c77c3c90.pdf">
+          <div class="cert-issuer-logo" style="background:rgba(123,47,255,0.1);border:1px solid rgba(123,47,255,0.2);">🐍</div>
+          <div class="cert-name">Python for Data Science</div>
+          <div class="cert-issuer">Infosys Springboard</div>
+          <div class="cert-date">MAR 2025</div>
+          <span class="rank-badge rank-b" style="margin-top:0.75rem;display:inline-block;">B-RANK</span>
+          <div class="cert-view-hint">↗ Click to view details</div>
+        </div>
+
+        <!-- Infosys Basics of Python -->
+        <div class="cert-card glass-card"
+          data-cert-name="Basics of Python"
+          data-cert-issuer="Infosys Springboard"
+          data-cert-date="February 4, 2025"
+          data-cert-img=""
+          data-cert-link="#"
+          data-cert-download="images/Certificates/Infosys(23eg106a41).pdf">
+          <div class="cert-issuer-logo" style="background:rgba(123,47,255,0.1);border:1px solid rgba(123,47,255,0.2);">🔰</div>
+          <div class="cert-name">Basics of Python</div>
+          <div class="cert-issuer">Infosys Springboard</div>
+          <div class="cert-date">FEB 2025</div>
+          <span class="rank-badge rank-c" style="margin-top:0.75rem;display:inline-block;">C-RANK</span>
+          <div class="cert-view-hint">↗ Click to view details</div>
+        </div>
+
+        <!-- DAA Udemy -->
+        <div class="cert-card glass-card"
+          data-cert-name="Design & Analysis of Algorithms"
+          data-cert-issuer="Udemy — Shravan Kumar Manthri"
+          data-cert-date="January 2, 2025"
+          data-cert-img=""
+          data-cert-link="https://www.udemy.com/certificate/UC-1a934c74-714b-4a8d-a799-38f3442fefbc/"
+          data-cert-download="images/Certificates/UC-1a934c74-714b-4a8d-a799-38f3442fefbc.pdf">
+          <div class="cert-issuer-logo" style="background:rgba(0,212,255,0.1);border:1px solid rgba(0,212,255,0.2);">🧮</div>
+          <div class="cert-name">Design & Analysis of Algorithms</div>
+          <div class="cert-issuer">Udemy · 10 Hours</div>
+          <div class="cert-date">JAN 2025</div>
+          <span class="rank-badge rank-b" style="margin-top:0.75rem;display:inline-block;">B-RANK</span>
+          <div class="cert-view-hint">↗ Click to view & verify</div>
+        </div>
+
+        <!-- Infosys HTML5 -->
+        <div class="cert-card glass-card"
+          data-cert-name="HTML5 - The Language"
+          data-cert-issuer="Infosys Springboard"
+          data-cert-date="June 18, 2025"
+          data-cert-img=""
+          data-cert-link="#"
+          data-cert-download="images/Certificates/23eg106a41(HTML5).pdf">
+          <div class="cert-issuer-logo" style="background:rgba(255,140,0,0.1);border:1px solid rgba(255,140,0,0.2);">🏷️</div>
+          <div class="cert-name">HTML5 – The Language</div>
+          <div class="cert-issuer">Infosys Springboard</div>
+          <div class="cert-date">JUN 2025</div>
+          <span class="rank-badge rank-c" style="margin-top:0.75rem;display:inline-block;">C-RANK</span>
+          <div class="cert-view-hint">↗ Click to view details</div>
+        </div>
+
+        <!-- Infosys CSS3 -->
+        <div class="cert-card glass-card"
+          data-cert-name="CSS3"
+          data-cert-issuer="Infosys Springboard"
+          data-cert-date="June 26, 2025"
+          data-cert-img=""
+          data-cert-link="#"
+          data-cert-download="images/Certificates/23eg106a41(CSS).pdf">
+          <div class="cert-issuer-logo" style="background:rgba(0,150,255,0.1);border:1px solid rgba(0,150,255,0.2);">🎨</div>
+          <div class="cert-name">CSS3</div>
+          <div class="cert-issuer">Infosys Springboard</div>
+          <div class="cert-date">JUN 2025</div>
+          <span class="rank-badge rank-c" style="margin-top:0.75rem;display:inline-block;">C-RANK</span>
+          <div class="cert-view-hint">↗ Click to view details</div>
+        </div>
+
+        <!-- Infosys JavaScript -->
+        <div class="cert-card glass-card"
+          data-cert-name="JavaScript"
+          data-cert-issuer="Infosys Springboard"
+          data-cert-date="June 27, 2025"
+          data-cert-img=""
+          data-cert-link="#"
+          data-cert-download="images/Certificates/23eg106a41(JavaScript).pdf">
+          <div class="cert-issuer-logo" style="background:rgba(255,215,0,0.1);border:1px solid rgba(255,215,0,0.2);">⚡</div>
+          <div class="cert-name">JavaScript</div>
+          <div class="cert-issuer">Infosys Springboard</div>
+          <div class="cert-date">JUN 2025</div>
+          <span class="rank-badge rank-c" style="margin-top:0.75rem;display:inline-block;">C-RANK</span>
+          <div class="cert-view-hint">↗ Click to view details</div>
+        </div>
+
+        <!-- Infosys Node.js -->
+        <div class="cert-card glass-card"
+          data-cert-name="Node.js"
+          data-cert-issuer="Infosys Springboard"
+          data-cert-date="August 7, 2025"
+          data-cert-img=""
+          data-cert-link="#"
+          data-cert-download="images/Certificates/23eg106a41(node.js).pdf">
+          <div class="cert-issuer-logo" style="background:rgba(0,200,100,0.1);border:1px solid rgba(0,200,100,0.2);">🟢</div>
+          <div class="cert-name">Node.js</div>
+          <div class="cert-issuer">Infosys Springboard</div>
+          <div class="cert-date">AUG 2025</div>
+          <span class="rank-badge rank-b" style="margin-top:0.75rem;display:inline-block;">B-RANK</span>
+          <div class="cert-view-hint">↗ Click to view details</div>
+        </div>
+
+        <!-- Simplilearn Express.js -->
+        <div class="cert-card glass-card"
+          data-cert-name="Introduction to Express JS"
+          data-cert-issuer="Simplilearn SkillUp"
+          data-cert-date="August 18, 2025"
+          data-cert-img=""
+          data-cert-link="#"
+          data-cert-download="images/Certificates/23eg106a41(express).pdf">
+          <div class="cert-issuer-logo" style="background:rgba(255,45,140,0.1);border:1px solid rgba(255,45,140,0.2);">🚀</div>
+          <div class="cert-name">Introduction to Express JS</div>
+          <div class="cert-issuer">Simplilearn SkillUp</div>
+          <div class="cert-date">AUG 2025</div>
+          <span class="rank-badge rank-c" style="margin-top:0.75rem;display:inline-block;">C-RANK</span>
+          <div class="cert-view-hint">↗ Click to view details</div>
+        </div>
+
+        <!-- Simplilearn MongoDB -->
+        <div class="cert-card glass-card"
+          data-cert-name="Introduction to MongoDB"
+          data-cert-issuer="Simplilearn SkillUp"
+          data-cert-date="October 4, 2025"
+          data-cert-img=""
+          data-cert-link="#"
+          data-cert-download="images/Certificates/23eg106a41(MongoDB).pdf">
+          <div class="cert-issuer-logo" style="background:rgba(0,200,100,0.1);border:1px solid rgba(0,200,100,0.2);">🍃</div>
+          <div class="cert-name">Introduction to MongoDB</div>
+          <div class="cert-issuer">Simplilearn SkillUp</div>
+          <div class="cert-date">OCT 2025</div>
+          <span class="rank-badge rank-c" style="margin-top:0.75rem;display:inline-block;">C-RANK</span>
+          <div class="cert-view-hint">↗ Click to view details</div>
+        </div>
+
+        <!-- Simplilearn Angular -->
+        <div class="cert-card glass-card"
+          data-cert-name="Angular Basics"
+          data-cert-issuer="Simplilearn SkillUp"
+          data-cert-date="October 4, 2025"
+          data-cert-img=""
+          data-cert-link="#"
+          data-cert-download="images/Certificates/23eg106a41(AngularJS).pdf">
+          <div class="cert-issuer-logo" style="background:rgba(200,0,50,0.1);border:1px solid rgba(200,0,50,0.2);">🅰️</div>
+          <div class="cert-name">Angular Basics</div>
+          <div class="cert-issuer">Simplilearn SkillUp</div>
+          <div class="cert-date">OCT 2025</div>
+          <span class="rank-badge rank-c" style="margin-top:0.75rem;display:inline-block;">C-RANK</span>
+          <div class="cert-view-hint">↗ Click to view details</div>
+        </div>
+
+        <!-- DAA Mindluster -->
+        <div class="cert-card glass-card"
+          data-cert-name="Design & Analysis of Algorithms DAA"
+          data-cert-issuer="MindLuster · 9 Hours"
+          data-cert-date="March 15, 2025"
+          data-cert-img=""
+          data-cert-link="#"
+          data-cert-download="images/Certificates/Mindluster_Certificate.pdf">
+          <div class="cert-issuer-logo" style="background:rgba(0,212,255,0.1);border:1px solid rgba(0,212,255,0.2);">🔬</div>
+          <div class="cert-name">DAA — Design & Analysis of Algorithms</div>
+          <div class="cert-issuer">MindLuster · Cert: c891d48f</div>
+          <div class="cert-date">MAR 2025</div>
+          <span class="rank-badge rank-c" style="margin-top:0.75rem;display:inline-block;">C-RANK</span>
+          <div class="cert-view-hint">↗ Click to view details</div>
+        </div>
+
+        <!-- IEEE Participation -->
+        <div class="cert-card glass-card" style="border-color:rgba(0,212,255,0.2);"
+          data-cert-name="Let us 'C' Compilers Compete — Participation"
+          data-cert-issuer="IEEE CIS AU SBC, Dept. of AI, Anurag University"
+          data-cert-date="July 27, 2024"
+          data-cert-img=""
+          data-cert-link="#"
+          data-cert-download="images/Certificates/Mudumbysanjay.pdf">
+          <div class="cert-issuer-logo" style="background:rgba(0,212,255,0.1);border:1px solid rgba(0,212,255,0.2);">🏛️</div>
+          <div class="cert-name">Compilers Compete — IEEE CIS</div>
+          <div class="cert-issuer">IEEE CIS AU SBC · Anurag University</div>
+          <div class="cert-date">JUL 2024</div>
+          <span class="rank-badge rank-c" style="margin-top:0.75rem;display:inline-block;">PARTICIPATION</span>
+          <div class="cert-view-hint">↗ Click to view details</div>
+        </div>
+
+      </div>
+
+      <!-- ACHIEVEMENT SUMMARY -->
+      <div class="fade-in" style="margin-top:4rem;display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:1.5rem;">
+        <div class="glass-card" style="padding:1.5rem;text-align:center;">
+          <div style="font-family:var(--font-display);font-size:2rem;color:var(--gold);text-shadow:0 0 15px var(--gold);" data-counter="16" data-suffix="+">0+</div>
+          <div style="font-family:var(--font-heading);font-size:0.75rem;color:var(--text-dim);letter-spacing:2px;text-transform:uppercase;margin-top:0.25rem;">Total Certs</div>
+        </div>
+        <div class="glass-card" style="padding:1.5rem;text-align:center;">
+          <div style="font-family:var(--font-display);font-size:2rem;color:var(--neon-blue);text-shadow:0 0 15px var(--neon-blue);" data-counter="5" data-suffix="">0</div>
+          <div style="font-family:var(--font-heading);font-size:0.75rem;color:var(--text-dim);letter-spacing:2px;text-transform:uppercase;margin-top:0.25rem;">Platforms</div>
+        </div>
+        <div class="glass-card" style="padding:1.5rem;text-align:center;">
+          <div style="font-family:var(--font-display);font-size:2rem;color:var(--neon-purple);text-shadow:0 0 15px var(--neon-purple);" data-counter="2" data-suffix="">0</div>
+          <div style="font-family:var(--font-heading);font-size:0.75rem;color:var(--text-dim);letter-spacing:2px;text-transform:uppercase;margin-top:0.25rem;">Internships</div>
+        </div>
+        <div class="glass-card" style="padding:1.5rem;text-align:center;">
+          <div style="font-family:var(--font-display);font-size:2rem;color:var(--neon-pink);text-shadow:0 0 15px var(--neon-pink);" data-counter="2" data-suffix="">0</div>
+          <div style="font-family:var(--font-heading);font-size:0.75rem;color:var(--text-dim);letter-spacing:2px;text-transform:uppercase;margin-top:0.25rem;">Govt Certs</div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      &copy; 2026 <span>SANJAY MUDUMBY</span> — All rights reserved. Built with ⚡
+    </footer>
+  </div>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

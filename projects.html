@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quests | Sanjay Mudumby</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⚡</text></svg>">
+</head>
+<body>
+  <canvas id="particle-canvas"></canvas>
+
+  <nav class="navbar">
+    <a href="index.html" class="nav-logo">SANJAY<span>.</span>MUDUMBY</a>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">Origin</a></li>
+      <li><a href="skills.html">Powers</a></li>
+      <li><a href="projects.html">Quests</a></li>
+      <li><a href="certifications.html">Achievements</a></li>
+      <li><a href="contact.html">Summon</a></li>
+    </ul>
+    <div class="nav-toggle"><span></span><span></span><span></span></div>
+  </nav>
+
+  <div class="page-content">
+    <section class="section">
+      <div class="fade-in">
+        <div class="system-tag" style="font-family:var(--font-display);font-size:0.7rem;color:var(--neon-cyan);letter-spacing:4px;text-transform:uppercase;margin-bottom:0.5rem;">▶ Quest Board — Active & Completed Dungeons</div>
+        <h1 class="section-title">QUEST BOARD</h1>
+        <div class="section-divider"></div>
+        <p class="section-subtitle">Projects Conquered in Battle</p>
+      </div>
+
+      <div class="projects-grid">
+
+        <!-- PROJECT 1: Smart Campus -->
+        <div class="project-card glass-card fade-in" style="border-color:rgba(255,215,0,0.3);">
+          <div class="project-header">
+            <div class="project-icon" style="background:rgba(255,215,0,0.1);border-color:rgba(255,215,0,0.3);">🏫</div>
+            <span class="rank-badge rank-s">S-RANK MISSION</span>
+          </div>
+          <div class="project-title">Smart Campus Issue Reporting System</div>
+          <div class="project-desc">
+            Full-stack issue-tracking web app with JWT-based RBAC authentication supporting 3 user roles (student, staff, admin) across multiple departments. Features department-wise analytics dashboards, image uploads, issue history timeline, and automated email notifications. Optimized relational MySQL schema with 8+ tables and paginated REST API endpoints.
+          </div>
+          <div class="tech-tags">
+            <span class="tech-tag">Java</span>
+            <span class="tech-tag">Spring Boot</span>
+            <span class="tech-tag">MySQL</span>
+            <span class="tech-tag">JWT</span>
+            <span class="tech-tag">REST APIs</span>
+            <span class="tech-tag">Vercel</span>
+          </div>
+          <div style="display:flex;gap:0.5rem;flex-wrap:wrap;margin-bottom:0.75rem;">
+            <span style="font-family:var(--font-display);font-size:0.65rem;color:var(--gold);background:rgba(255,215,0,0.1);padding:0.2rem 0.6rem;border-radius:4px;border:1px solid rgba(255,215,0,0.3);">40% reporting effort reduction</span>
+            <span style="font-family:var(--font-display);font-size:0.65rem;color:var(--neon-cyan);background:rgba(0,212,255,0.1);padding:0.2rem 0.6rem;border-radius:4px;border:1px solid rgba(0,212,255,0.2);">Live Deployed</span>
+          </div>
+          <div class="project-links">
+            <a href="https://smart-campus-green.vercel.app" target="_blank" rel="noopener" class="project-link">🌐 Live Demo</a>
+            <a href="https://github.com/Sanjay-glitch-dotcom/smart-campus" target="_blank" rel="noopener" class="project-link">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+              Repo
+            </a>
+          </div>
+        </div>
+
+        <!-- PROJECT 2: Anonymous Debate -->
+        <div class="project-card glass-card fade-in" style="border-color:rgba(255,45,140,0.2);">
+          <div class="project-header">
+            <div class="project-icon" style="background:rgba(255,45,140,0.1);border-color:rgba(255,45,140,0.2);">🗣️</div>
+            <span class="rank-badge rank-a">DUNGEON</span>
+          </div>
+          <div class="project-title">Anonymous Group Debate Platform</div>
+          <div class="project-desc">
+            Real-time discussion platform with identity-concealment logic, admin moderation tools, and support for 50+ concurrent users. Engineered for structured debate with improved response efficiency. Backend deployed on Railway with 99% uptime during testing.
+          </div>
+          <div class="tech-tags">
+            <span class="tech-tag">Node.js</span>
+            <span class="tech-tag">Express.js</span>
+            <span class="tech-tag">MongoDB</span>
+            <span class="tech-tag">Socket.io</span>
+            <span class="tech-tag">REST APIs</span>
+            <span class="tech-tag">Railway</span>
+          </div>
+          <div style="display:flex;gap:0.5rem;flex-wrap:wrap;margin-bottom:0.75rem;">
+            <span style="font-family:var(--font-display);font-size:0.65rem;color:var(--neon-pink);background:rgba(255,45,140,0.1);padding:0.2rem 0.6rem;border-radius:4px;border:1px solid rgba(255,45,140,0.3);">50+ concurrent users</span>
+            <span style="font-family:var(--font-display);font-size:0.65rem;color:var(--neon-cyan);background:rgba(0,212,255,0.1);padding:0.2rem 0.6rem;border-radius:4px;border:1px solid rgba(0,212,255,0.2);">99% uptime</span>
+          </div>
+          <div class="project-links">
+            <a href="https://github.com/Sanjay-glitch-dotcom/Anonymous-Group-Debate" target="_blank" rel="noopener" class="project-link">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+              Repo
+            </a>
+          </div>
+        </div>
+
+        <!-- PROJECT 3: vSplit -->
+        <div class="project-card glass-card fade-in" style="border-color:rgba(123,47,255,0.3);">
+          <div class="project-header">
+            <div class="project-icon" style="background:rgba(123,47,255,0.1);border-color:rgba(123,47,255,0.3);">💸</div>
+            <span class="rank-badge rank-b">DUNGEON</span>
+          </div>
+          <div class="project-title">vSplit — Smart Bill Splitter (UPI-Based)</div>
+          <div class="project-desc">
+            AI-powered bill-splitting app with real-time Firebase data sync and automated UPI-based expense calculation. Deployed as a cloud application handling multiple concurrent users. Contributed API integration and CRUD expense logic; containerised locally using Docker for dev-prod parity.
+          </div>
+          <div class="tech-tags">
+            <span class="tech-tag">HTML</span>
+            <span class="tech-tag">CSS</span>
+            <span class="tech-tag">JavaScript</span>
+            <span class="tech-tag">Firebase</span>
+            <span class="tech-tag">REST APIs</span>
+            <span class="tech-tag">Docker</span>
+          </div>
+          <div style="display:flex;gap:0.5rem;flex-wrap:wrap;margin-bottom:0.75rem;">
+            <span style="font-family:var(--font-display);font-size:0.65rem;color:var(--neon-purple);background:rgba(123,47,255,0.1);padding:0.2rem 0.6rem;border-radius:4px;border:1px solid rgba(123,47,255,0.3);">UPI Integration</span>
+            <span style="font-family:var(--font-display);font-size:0.65rem;color:var(--neon-cyan);background:rgba(0,212,255,0.1);padding:0.2rem 0.6rem;border-radius:4px;border:1px solid rgba(0,212,255,0.2);">Live Deployed</span>
+          </div>
+          <div class="project-links">
+            <a href="https://nihaldodda.github.io/vSplit/" target="_blank" rel="noopener" class="project-link">🌐 Live Demo</a>
+            <a href="https://github.com/Sanjay-glitch-dotcom/vSplit" target="_blank" rel="noopener" class="project-link">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+              Repo
+            </a>
+          </div>
+        </div>
+
+        <!-- PROJECT 4: Portfolio -->
+        <div class="project-card glass-card fade-in" style="border-color:rgba(0,212,255,0.2);">
+          <div class="project-header">
+            <div class="project-icon" style="background:rgba(0,212,255,0.1);border-color:rgba(0,212,255,0.2);">🌐</div>
+            <span class="rank-badge rank-c">EASY QUEST</span>
+          </div>
+          <div class="project-title">Personal Portfolio Website</div>
+          <div class="project-desc">
+            Designed and developed a fully responsive portfolio website showcasing projects, skills, and certifications. Improved recruiter reach and centralised project showcase. Built with pure HTML5, CSS3, and JavaScript — deployed via GitHub Pages.
+          </div>
+          <div class="tech-tags">
+            <span class="tech-tag">HTML5</span>
+            <span class="tech-tag">CSS3</span>
+            <span class="tech-tag">JavaScript</span>
+            <span class="tech-tag">GitHub Pages</span>
+          </div>
+          <div style="display:flex;gap:0.5rem;flex-wrap:wrap;margin-bottom:0.75rem;">
+            <span style="font-family:var(--font-display);font-size:0.65rem;color:var(--neon-blue);background:rgba(0,212,255,0.1);padding:0.2rem 0.6rem;border-radius:4px;border:1px solid rgba(0,212,255,0.2);">Responsive Design</span>
+          </div>
+          <div class="project-links">
+            <a href="https://sanjay-glitch-dotcom.github.io/my-portfolio" target="_blank" rel="noopener" class="project-link">🌐 Live Demo</a>
+            <a href="https://github.com/Sanjay-glitch-dotcom/my-portfolio" target="_blank" rel="noopener" class="project-link">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+              Repo
+            </a>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- STATS BAR -->
+      <div class="fade-in" style="margin-top:4rem;padding:2rem;border-radius:12px;" class="glass-card">
+        <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:1.5rem;text-align:center;">
+          <div>
+            <div style="font-family:var(--font-display);font-size:2rem;color:var(--gold);text-shadow:0 0 15px var(--gold);" data-counter="4" data-suffix="+">0+</div>
+            <div style="font-family:var(--font-heading);font-size:0.8rem;color:var(--text-dim);letter-spacing:2px;text-transform:uppercase;">Projects Deployed</div>
+          </div>
+          <div>
+            <div style="font-family:var(--font-display);font-size:2rem;color:var(--neon-blue);text-shadow:0 0 15px var(--neon-blue);" data-counter="2" data-suffix="">0</div>
+            <div style="font-family:var(--font-heading);font-size:0.8rem;color:var(--text-dim);letter-spacing:2px;text-transform:uppercase;">Live Apps</div>
+          </div>
+          <div>
+            <div style="font-family:var(--font-display);font-size:2rem;color:var(--neon-purple);text-shadow:0 0 15px var(--neon-purple);" data-counter="8" data-suffix="+">0+</div>
+            <div style="font-family:var(--font-heading);font-size:0.8rem;color:var(--text-dim);letter-spacing:2px;text-transform:uppercase;">Tech Used</div>
+          </div>
+          <div>
+            <div style="font-family:var(--font-display);font-size:2rem;color:var(--neon-pink);text-shadow:0 0 15px var(--neon-pink);" data-counter="99" data-suffix="%">0%</div>
+            <div style="font-family:var(--font-heading);font-size:0.8rem;color:var(--text-dim);letter-spacing:2px;text-transform:uppercase;">Uptime</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      &copy; 2026 <span>SANJAY MUDUMBY</span> — All rights reserved. Built with ⚡
+    </footer>
+  </div>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
