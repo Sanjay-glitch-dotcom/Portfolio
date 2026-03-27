@@ -277,13 +277,18 @@ function initContactForm() {
   if (!form) return;
   const status = document.getElementById('form-status');
 
+(function() {
+    emailjs.init("LKI2AZPN-pfy20nap");
+  })();
+ 
   form.addEventListener('submit', (e) => {
     e.preventDefault();
     const name = form.querySelector('#name').value.trim();
     const email = form.querySelector('#email').value.trim();
+    const subject = form.querySelector('#subject').value.trim();
     const message = form.querySelector('#message').value.trim();
-
-    if (!name || !email || !message) {
+ 
+    if (!name || !email || !subject || !message) {
       status.textContent = '⚠ All fields required, Hunter.';
       status.className = 'form-status error';
       return;
@@ -293,11 +298,28 @@ function initContactForm() {
       status.className = 'form-status error';
       return;
     }
-
-    status.textContent = '✓ Message transmitted. I will respond shortly.';
-    status.className = 'form-status success';
-    form.reset();
-    setTimeout(() => { status.className = 'form-status'; }, 5000);
+ 
+    // Show loading state
+    status.textContent = '⚡ Transmitting message...';
+    status.className = 'form-status';
+ 
+    // Send email using EmailJS
+    emailjs.send('service_muvw4eo', 'template_isv4wbe', {
+      from_name: name,
+      from_email: email,
+      subject: subject,
+      message: message,
+      to_email: 'sanjay.mudumby@gmail.com'
+    })
+    .then(function(response) {
+      status.textContent = '✓ Message transmitted successfully! I\'ll respond within 24 hours.';
+      status.className = 'form-status success';
+      form.reset();
+      setTimeout(() => { status.className = 'form-status'; }, 5000);
+    }, function(error) {
+      status.textContent = '⚠ Transmission failed. Please try again or email directly.';
+      status.className = 'form-status error';
+    });
   });
 }
 
