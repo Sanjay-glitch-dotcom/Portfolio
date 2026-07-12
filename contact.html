@@ -1,13 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Summon Me | Sanjay Mudumby</title>
   <link rel="stylesheet" href="css/styles.css">
-  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><defs><linearGradient id='g' x1='0' y1='0' x2='1' y2='1'><stop offset='0%' stop-color='%2300d4ff'/><stop offset='100%' stop-color='%237b2ff7'/></linearGradient></defs><circle cx='50' cy='50' r='45' fill='url(%23g)'/><text x='50' y='60' font-size='36' text-anchor='middle' fill='white'>SM</text></svg>">
+  <link rel="icon"
+    href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><defs><linearGradient id='g' x1='0' y1='0' x2='1' y2='1'><stop offset='0%' stop-color='%2300d4ff'/><stop offset='100%' stop-color='%237b2ff7'/></linearGradient></defs><circle cx='50' cy='50' r='45' fill='url(%23g)'/><text x='50' y='60' font-size='36' text-anchor='middle' fill='white'>SM</text></svg>">
 </head>
+
 <body>
   <canvas id="particle-canvas"></canvas>
 
@@ -27,7 +30,9 @@
   <div class="page-content">
     <section class="section">
       <div class="fade-in">
-        <div class="system-tag" style="font-family:var(--font-display);font-size:0.7rem;color:var(--neon-cyan);letter-spacing:4px;text-transform:uppercase;margin-bottom:0.5rem;">▶ Summon System — Transmit Your Message</div>
+        <div class="system-tag"
+          style="font-family:var(--font-display);font-size:0.7rem;color:var(--neon-cyan);letter-spacing:4px;text-transform:uppercase;margin-bottom:0.5rem;">
+          ▶ Summon System — Transmit Your Message</div>
         <h1 class="section-title">SUMMON ME</h1>
         <div class="section-divider"></div>
         <p class="section-subtitle">Open for Internship & Collaboration</p>
@@ -37,61 +42,132 @@
         <!-- LEFT: Contact Info -->
         <div>
           <div class="glass-card" style="padding:2rem;margin-bottom:1.5rem;">
-            <h3 style="font-family:var(--font-display);font-size:0.9rem;color:var(--neon-blue);letter-spacing:2px;margin-bottom:1rem;">STATUS: AVAILABLE</h3>
+            <h3
+              style="font-family:var(--font-display);font-size:0.9rem;color:var(--neon-blue);letter-spacing:2px;margin-bottom:1rem;">
+              STATUS: AVAILABLE</h3>
             <div style="display:flex;align-items:center;gap:0.75rem;margin-bottom:1rem;">
-              <span style="width:10px;height:10px;border-radius:50%;background:var(--neon-cyan);box-shadow:0 0 10px var(--neon-cyan);animation:glow-pulse 2s infinite;display:block;flex-shrink:0;"></span>
-              <span style="font-family:var(--font-heading);font-size:0.9rem;color:var(--text-secondary);">Seeking Software Engineering / ML-AI Intern Roles</span>
+              <span
+                style="width:10px;height:10px;border-radius:50%;background:var(--neon-cyan);box-shadow:0 0 10px var(--neon-cyan);animation:glow-pulse 2s infinite;display:block;flex-shrink:0;"></span>
+              <span style="font-family:var(--font-heading);font-size:0.9rem;color:var(--text-secondary);">Seeking
+                Software Engineering / ML-AI Intern Roles</span>
             </div>
             <p style="font-size:0.875rem;color:var(--text-secondary);line-height:1.8;">
-              Currently in my 3rd year of B.Tech AI at Anurag University. Ready to contribute from day one — full-stack development, ML pipelines, or anything in between. Transmit your message and I'll respond swiftly.
+              Currently in my 4th year of B.Tech AI at Anurag University. Ready to contribute from day one — full-stack
+              development, ML pipelines, or anything in between. Transmit your message and I'll respond swiftly.
             </p>
           </div>
 
-          <div class="contact-links">
-            <a href="mailto:sanjay.mudumby@gmail.com" class="contact-link-item glass-card">
-              <div class="contact-link-icon" style="background:rgba(0,212,255,0.1);border:1px solid rgba(0,212,255,0.2);">✉️</div>
-              <div class="contact-link-text">
-                <span>Email</span>
-                <strong>sanjay.mudumby@gmail.com</strong>
+          <style>
+            .social-bar-container {
+              background: rgba(15, 15, 25, 0.6);
+              border: 1px solid rgba(255, 255, 255, 0.05);
+              border-radius: 1.5rem;
+              padding: 1.5rem 2rem;
+              display: flex;
+              gap: 1.5rem;
+              flex-wrap: wrap;
+              justify-content: center;
+              margin-top: 1rem;
+              margin-bottom: 1.5rem;
+              box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+            }
+            .social-icon-wrapper {
+              display: flex;
+              flex-direction: column;
+              align-items: center;
+              gap: 0.6rem;
+              text-decoration: none;
+              color: var(--text-secondary, #aaa);
+              transition: all 0.3s ease;
+            }
+            .social-icon-wrapper .icon-circle {
+              width: 50px;
+              height: 50px;
+              border-radius: 50%;
+              background: rgba(255, 255, 255, 0.03);
+              border: 1px solid rgba(255, 255, 255, 0.08);
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              transition: all 0.3s ease;
+              color: white;
+            }
+            .social-icon-wrapper:hover .icon-circle {
+              background: rgba(255, 255, 255, 0.1);
+              transform: translateY(-3px);
+              box-shadow: 0 5px 15px rgba(0, 212, 255, 0.2);
+              border-color: rgba(0, 212, 255, 0.3);
+            }
+            .social-icon-wrapper:hover span {
+              color: white;
+            }
+            .social-icon-wrapper span {
+              font-size: 0.75rem;
+              font-family: var(--font-heading, sans-serif);
+              transition: all 0.3s ease;
+            }
+          </style>
+          <div class="social-bar-container">
+            <!-- Email -->
+            <a href="mailto:sanjay.mudumby@gmail.com" class="social-icon-wrapper">
+              <div class="icon-circle">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
               </div>
+              <span>Email</span>
             </a>
-
-            <a href="https://github.com/Sanjay-glitch-dotcom" target="_blank" rel="noopener" class="contact-link-item glass-card" style="color:inherit;text-decoration:none;">
-              <div class="contact-link-icon" style="background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.1);">
-                <svg width="22" height="22" viewBox="0 0 24 24" fill="var(--text-primary)"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+            <!-- GitHub -->
+            <a href="https://github.com/Sanjay-glitch-dotcom" target="_blank" rel="noopener" class="social-icon-wrapper">
+              <div class="icon-circle">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
               </div>
-              <div class="contact-link-text">
-                <span>GitHub</span>
-                <strong>Sanjay-glitch-dotcom</strong>
-              </div>
+              <span>GitHub</span>
             </a>
-
-            <a href="https://www.linkedin.com/in/mudumby-sanjay/" target="_blank" rel="noopener" class="contact-link-item glass-card" style="color:inherit;text-decoration:none;">
-              <div class="contact-link-icon" style="background:rgba(0,119,181,0.1);border:1px solid rgba(0,119,181,0.3);">
-                <svg width="22" height="22" viewBox="0 0 24 24" fill="#0077b5"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+            <!-- LinkedIn -->
+            <a href="https://www.linkedin.com/in/mudumby-sanjay/" target="_blank" rel="noopener" class="social-icon-wrapper">
+              <div class="icon-circle">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
               </div>
-              <div class="contact-link-text">
-                <span>LinkedIn</span>
-                <strong>mudumby-sanjay</strong>
+              <span>LinkedIn</span>
+            </a>
+            <!-- WhatsApp -->
+            <a href="https://wa.me/919492764088" target="_blank" rel="noopener" class="social-icon-wrapper">
+              <div class="icon-circle">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
               </div>
+              <span>WhatsApp</span>
+            </a>
+            <!-- Telegram -->
+            <a href="https://t.me/M_SDNJDY" target="_blank" rel="noopener" class="social-icon-wrapper">
+              <div class="icon-circle">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm5.894 8.221l-1.97 9.28c-.145.658-.537.818-1.084.508l-3-2.21-1.446 1.394c-.14.18-.357.295-.6.295-.002 0-.003 0-.005 0l.213-3.054 5.56-5.022c.24-.213-.054-.334-.373-.121l-6.869 4.326-2.96-.924c-.64-.203-.658-.64.135-.954l11.566-4.458c.538-.196 1.006.128.832.94z"/></svg>
+              </div>
+              <span>Telegram</span>
             </a>
           </div>
 
           <div style="margin-top:1.5rem;">
-            <a href="files/Resume.pdf" target="_blank" class="btn btn-primary" style="width:100%;justify-content:center;margin-bottom:0.75rem;">
+            <a href="files/Resume.pdf" target="_blank" class="btn btn-primary"
+              style="width:100%;justify-content:center;margin-bottom:0.75rem;">
               👁 View Resume
             </a>
-            <a href="files/Resume.pdf" download="Sanjay_Mudumby_Resume.pdf" class="btn btn-gold" style="width:100%;justify-content:center;">
+            <a href="files/Resume.pdf" download="Sanjay_Mudumby_Resume.pdf" class="btn btn-gold"
+              style="width:100%;justify-content:center;">
               Download Resume
             </a>
-            <div style="font-family:var(--font-display);font-size:0.65rem;color:var(--text-dim);letter-spacing:2px;text-align:center;margin-top:0.75rem;">VIEW OR DOWNLOAD</div>
+            <div
+              style="font-family:var(--font-display);font-size:0.65rem;color:var(--text-dim);letter-spacing:2px;text-align:center;margin-top:0.75rem;">
+              VIEW OR DOWNLOAD</div>
           </div>
         </div>
 
         <!-- RIGHT: Contact Form -->
         <div class="glass-card" style="padding:2.5rem;">
-          <h3 style="font-family:var(--font-display);font-size:1rem;color:var(--neon-blue);letter-spacing:2px;margin-bottom:0.5rem;text-shadow:0 0 10px var(--neon-blue);">TRANSMIT MESSAGE</h3>
-          <p style="font-family:var(--font-heading);font-size:0.8rem;color:var(--text-dim);letter-spacing:1px;margin-bottom:2rem;">Fill the form below. All fields required.</p>
+          <h3
+            style="font-family:var(--font-display);font-size:1rem;color:var(--neon-blue);letter-spacing:2px;margin-bottom:0.5rem;text-shadow:0 0 10px var(--neon-blue);">
+            TRANSMIT MESSAGE</h3>
+          <p
+            style="font-family:var(--font-heading);font-size:0.8rem;color:var(--text-dim);letter-spacing:1px;margin-bottom:2rem;">
+            Fill the form below. All fields required.</p>
 
           <form class="contact-form" id="contact-form">
             <div class="form-group">
@@ -112,7 +188,7 @@
             </div>
             <div id="form-status" class="form-status"></div>
             <button type="submit" class="btn btn-primary" style="width:100%;justify-content:center;padding:1rem;">
-               SUMMON ME!
+              SUMMON ME!
             </button>
           </form>
         </div>
@@ -125,21 +201,36 @@
         <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:1rem;">
           <div class="glass-card" style="padding:1.5rem;">
             <div style="font-size:1.5rem;margin-bottom:0.75rem;">🧠</div>
-            <div style="font-family:var(--font-heading);font-weight:700;color:var(--text-primary);margin-bottom:0.25rem;">Secretary</div>
-            <div style="font-family:var(--font-display);font-size:0.7rem;color:var(--neon-blue);letter-spacing:2px;margin-bottom:0.5rem;">Neural Nexus Club, AU</div>
-            <div style="font-size:0.8rem;color:var(--text-secondary);">Coordinating AI/ML workshops, guest sessions, and technical events for 100+ members.</div>
+            <div
+              style="font-family:var(--font-heading);font-weight:700;color:var(--text-primary);margin-bottom:0.25rem;">
+              Secretary</div>
+            <div
+              style="font-family:var(--font-display);font-size:0.7rem;color:var(--neon-blue);letter-spacing:2px;margin-bottom:0.5rem;">
+              Neural Nexus Club, AU</div>
+            <div style="font-size:0.8rem;color:var(--text-secondary);">Coordinating AI/ML workshops, guest sessions, and
+              technical events for 100+ members.</div>
           </div>
           <div class="glass-card" style="padding:1.5rem;">
             <div style="font-size:1.5rem;margin-bottom:0.75rem;">💰</div>
-            <div style="font-family:var(--font-heading);font-weight:700;color:var(--text-primary);margin-bottom:0.25rem;">Treasurer</div>
-            <div style="font-family:var(--font-display);font-size:0.7rem;color:var(--gold);letter-spacing:2px;margin-bottom:0.5rem;">Tech Amuse Club, AU</div>
-            <div style="font-size:0.8rem;color:var(--text-secondary);">Managing club budget, fund allocation, and financial planning for events.</div>
+            <div
+              style="font-family:var(--font-heading);font-weight:700;color:var(--text-primary);margin-bottom:0.25rem;">
+              Treasurer</div>
+            <div
+              style="font-family:var(--font-display);font-size:0.7rem;color:var(--gold);letter-spacing:2px;margin-bottom:0.5rem;">
+              Tech Amuse Club, AU</div>
+            <div style="font-size:0.8rem;color:var(--text-secondary);">Managing club budget, fund allocation, and
+              financial planning for events.</div>
           </div>
           <div class="glass-card" style="padding:1.5rem;">
             <div style="font-size:1.5rem;margin-bottom:0.75rem;">🤝</div>
-            <div style="font-family:var(--font-heading);font-weight:700;color:var(--text-primary);margin-bottom:0.25rem;">Member</div>
-            <div style="font-family:var(--font-display);font-size:0.7rem;color:var(--neon-purple);letter-spacing:2px;margin-bottom:0.5rem;">NSS Unit-6</div>
-            <div style="font-size:0.8rem;color:var(--text-secondary);">Contributing to community service and social awareness initiatives.</div>
+            <div
+              style="font-family:var(--font-heading);font-weight:700;color:var(--text-primary);margin-bottom:0.25rem;">
+              Member</div>
+            <div
+              style="font-family:var(--font-display);font-size:0.7rem;color:var(--neon-purple);letter-spacing:2px;margin-bottom:0.5rem;">
+              NSS Unit-6</div>
+            <div style="font-size:0.8rem;color:var(--text-secondary);">Contributing to community service and social
+              awareness initiatives.</div>
           </div>
         </div>
       </div>
@@ -152,4 +243,5 @@
 
   <script src="js/script.js"></script>
 </body>
+
 </html>
